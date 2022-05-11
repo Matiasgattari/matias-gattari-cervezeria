@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+/* font-family: 'Rubik Moonrocks', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Kaushan Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
+/* font-family: 'Rubik Microbe', cursive; */
+
+
+
+/* RESET */
+* {
+    margin: 0;
+    Padding: 0;
+}
+
+
+
+/* COLOR DE FONDO GENERAL */
+
+body {
+    background-color: #8192f0;
+
+}
+
+
+
+/* ESTILOS ELEMENTOS*/
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: #FFE3FE;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+strong {
+    margin: 4px;
+}
+
+header {
+    top: 0;
+    position: sticky;
+    background-color: rgba(155, 125, 247, 0.7);
+    z-index: 100;
+    font-size: 42px;
+    height: 1.5em;
+    width: 100%;
+}
+
+
+footer {
+    color: antiquewhite;
+    background-image: linear-gradient(to right, transparent, red, transparent);
+    height: 2.5em;
+    border-top: 2px white solid;
+    font-size: 16pxm;
+}
+
+
+
+
+/*ESTILOS CLASES */
+
+.list1 {
+    padding-left: 5px;
+    padding-right: 30px;
+    font-weight: bold;
+    height: 1.5em;
+    list-style-type: none;
+}
+
+
+.logoAlIndex {
+    width: 50px;
+    height: 50px;
+
+}
+
+.logoKon {
+    width: 350px;
+    height: 300px;
+}
+
+.mapaUbicacion {
+    width: 600px;
+    height: 450px;
+}
+
+/* AGREGANDO FLEXBOX AL HEADER */
+
+.nav {
+    border: 2px blanchedalmond solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    border-left: none;
+    border-right: none;
+
+}
+
+.nav1 {
+    display: inline-block;
+
+}
+
+.barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 100;
+}
+
+.barraNavegacionBotones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    padding-top: 3px;
+}
+
+
+
+
+/* AGREGANDO FLEXBOX AL INDEX - MAIN*/
+
+.mapa {
+    font-size: 15px;
+    color: aliceblue;
+    text-align: left;
+}
+
+.mainIndex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.divH1 {
+    display: inline-block;
+    text-align: center;
+    text-shadow: 80%;
+    color: #8192f0;
+    background-image: url(../img/fondo-titulo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Rubik Microbe', cursive;
+    border: 2px whitesmoke solid;
+    border-left: 0;
+    border-right: 0;
+    width: 100%;
+    font-size: 1.3rem;
+    height: 2.2em;
+
+}
+
+
+
+.contenidoPrincipalElemento {
+    display: inline-block;
+    padding: 30px 30px 15px 10px;
+    color: rgb(231, 204, 245);
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 55px;
+    font-family: 'Kaushan Script', cursive;
+    font-style: oblique;
+    line-height: inherit;
+    place-self: center;
+}
+
+.ubicacion {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 40px 0px 15px 15px;
+    justify-content: flex-start;
+}
+
+.botonInicio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 15px 10px 0px 10px;
+    padding-right: 20px;
+}
+
+/* agregando grid al index  */
+
+.contenidoPrincipal {
+    height: auto;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.8fr 1fr 0.8fr 1fr;
+    grid-template-areas:
+        "index1"
+        "index2"
+        "index3"
+        "index4"
+    ;
+    box-shadow: 30px 27px 16px rgba(0, 0, 0, 0.779);
+    text-shadow: 2px 2px 2px black;
+    border-radius: 25px;
+    padding-top: 15px;
+    border: 3px rgba(0, 0, 0, 0.532) solid;
+    margin-top: 15px;
+    background-image: url(../img/fondo-index-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.index1 {
+    grid-area: index1;
+}
+
+.index2 {
+    grid-area: index2;
+}
+
+.index3 {
+    grid-area: index3;
+}
+
+.index4 {
+    grid-area: index4;
+}
+
+
+/* Agregando grid a historia  */
+
+.listadoHistoria {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "historia1 historia2"
+        "historia3 historia4"
+    ;
+
+
+}
+
+.historia1 {
+    grid-area: historia1;
+}
+
+.historia2 {
+    grid-area: historia2;
+}
+
+.historia3 {
+    grid-area: historia3;
+}
+
+.historia4 {
+    grid-area: historia4;
+}
+
+
+/* AGREGANDO FLEXBOX AL HISTORIA - MAIN */
+
+.videoHistoria {
+    width: 400px;
+    height: 450px;
+    margin: 100px 25px 40px 25px;
+}
+
+p.historiaTexto {
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+    color: blanchedalmond;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+
+.contTexto {
+    height: 400px;
+    width: 750px;
+    margin-top: 120px;
+    margin-left: 50px;
+
+}
+
+.overflow {
+    overflow: auto;
+}
+
+.contenedorHistoria {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 1500px;
+
+}
+
+
+
+/* AGREGANDO FLEXBOX AL GALERIA - MAIN */
+
+
+
+
+
+
+/* AGREGANDO FLEXBOX AL PRODUCTOS - MAIN */
+
+p.video {
+    color: rgb(255, 220, 220);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: inherit;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    width: 85%;
+    margin: 60px;
+}
+
+.listadoProductos {
+    height: auto;
+    width: 60vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "img1 texto1 "
+        "texto2 img2"
+        "img3 texto3 "
+        "texto4 img4";
+    align-items: center;
+
+}
+
+.enLinea {
+    display: inline-block;
+}
+
+
+.imagenProducto {
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 100px;
+    border-radius: 35px;
+}
+
+
+
+
+
+/* AGREGANDO FLEXBOX AL FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+
+
+/* IMAGENES DE FONDO DE LOS HTML */
+
+.index {
+    background-image: url(../img/fondo-index-png.png);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.historia {
+    background-image: url(../img/fondo-historia.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.productos {
+    background-image: url(../../img/fondo-producto-png.png);
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.galeria {
+    background-image: url(../img/fondo-galeria-png.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.contactoFondo {
+    background-image: url(../img/fondo-contacto-png.png);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Agregando grids a la galeria  */
+
+.listadoImagenes {
+
+    margin-top: 65px;
+    margin-bottom: 65px;
+    z-index: 2;
+
+
+}
+
+p.galeriaTexto {
+    font-size: 37px;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(23, 35, 44);
+    font-weight: bold;
+    padding-top: 45px;
+    text-shadow: 4px -2px 5px;
+}
+
+.imgGaleria {
+    width: 100%;
+    height: 100%;
+    box-shadow: 15px 15px 10px rgba(28, 78, 52, 0.7);
+    border: 5px whitesmoke solid;
+    border-radius: 20px;
+
+}
+
+.listadoImagenes {
+    display: grid;
+    width: 70%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 290px);
+    grid-template-areas:
+        "foto1 foto1 foto4"
+        "foto3 foto2 foto4"
+        "foto6 foto5 foto5"
+        "foto6 foto10 foto7"
+        "foto9 foto10 foto12"
+        "foto11 foto8 foto8";
+    gap: 55px;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+
+.foto2 {
+    grid-area: foto2;
+}
+
+.foto3 {
+    grid-area: foto3;
+}
+
+.foto4 {
+    grid-area: foto4;
+}
+
+.foto5 {
+    grid-area: foto5;
+}
+
+.foto6 {
+    grid-area: foto6;
+}
+
+.foto7 {
+    grid-area: foto7;
+}
+
+.foto8 {
+    grid-area: foto8;
+}
+
+.foto9 {
+    grid-area: foto9;
+}
+
+.foto10 {
+    grid-area: foto10;
+}
+
+.foto11 {
+    grid-area: foto11;
+}
+
+.foto12 {
+    grid-area: foto12;
+}
+
+/* agregando grid contacto main */
+
+.contactoMain {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 0.6fr 1.2fr 1.2fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "con1 con2 ."
+        "con3 con4 ."
+        "con5 con6 ."
+        "con7 con8 con8"
+        ". con9 ."
+        ". con10 ."
+        ". con10 ."
+        ". con11 ."
+        ". con12 .";
+    gap: 25px 20px;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+
+.input {
+    width: 90%;
+    height: 50px;
+    place-self: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 21px;
+}
+
+.con1 {
+    grid-area: con1;
+
+}
+
+.con2 {
+    grid-area: con2;
+    font-size: 16px;
+    width: 35em;
+    font-family: 'Rubik Moonrocks', cursive;
+
+}
+
+.con3 {
+    grid-area: con3;
+
+}
+
+.con4 {
+    grid-area: con4;
+
+}
+
+.con5 {
+    grid-area: con5;
+
+}
+
+.con6 {
+    grid-area: con6;
+
+}
+
+.con7 {
+    grid-area: con7;
+
+}
+
+.con8 {
+    grid-area: con8;
+
+}
+
+.con9 {
+    grid-area: con9;
+
+}
+
+.con10 {
+    grid-area: con10;
+
+}
+
+.con11 {
+    grid-area: con11;
+
+}
+
+.con12 {
+    grid-area: con12;
+
+}
+
+.check {
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+}
+
+.contacto {
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Rubik Microbe', cursive;
+    place-self: center;
+}
+
+.contacto1 {
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size: 31px;
+    font-style: italic;
+}
+
+.comentarios {
+    color: #FFE3FE;
+    text-transform: capitalize;
+    font-size: 45px;
+    font-family: 'Rubik Microbe', cursive;
+
+}
+
+
+
+
+/* colocando hover, focus y animaciones  */
+
+.barraNavegacionBotones {
+    transition: all 250ms;
+}
+
+.list1:hover {
+    background-color: aqua;
+}
+
+a:hover {
+    color: rgb(255, 112, 112);
+    font-size: 1.8rem;
+}
+
+a.mapa:hover {
+    font-size: 16px;
+}
+
+a.inicio {
+    font-size: 21px;
+
+}
+
+input:focus {
+    background-color: aquamarine;
+}
+
+.focus:focus {
+    background-color: aquamarine;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.imgGaleria:hover {
+
+    animation-name: zoom;
+    animation-duration: 2s;
+    animation-delay: 500ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+/* FULL RESPONSIVE */
+
+@media screen and (max-width:768px) {
+
+    /* haciendo galeria responsive  */
+
+
+    a {
+        font-size: 1rem;
+    }
+
+    .listadoImagenes {
+        grid-template-columns: 95%;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4"
+            "foto5"
+            "foto6"
+            "foto7"
+            "foto8"
+            "foto9"
+            "foto10"
+            "foto11"
+            "foto12"
+        ;
+    }
+
+    .divH1 {
+        font-size: 1.5rem;
+        text-align: left;
+    }
+
+    p.galeriaTexto {
+        font-size: 1.5rem;
+    }
+
+
+    /* Agregando grids para productos responsive */
+    p.video {
+        font-size: 20px;
+        width: 90%;
+        margin: 20px;
+    }
+
+    .divH1 {
+        height: 1em;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .imagenProducto {
+
+        width: 200px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .contenedorImg {
+        width: 200px;
+    }
+
+    .conTexProd {
+        margin: 0;
+        padding: 0;
+    }
+
+    .img1 {
+        place-self: center;
+        grid-area: img1;
+    }
+
+    .img2 {
+        place-self: center;
+        grid-area: img2;
+    }
+
+    .img3 {
+        place-self: center;
+        grid-area: img3;
+    }
+
+    .img4 {
+        place-self: center;
+        grid-area: img4;
+    }
+
+    .texto1 {
+        grid-area: texto1;
+    }
+
+    .texto2 {
+        grid-area: texto2;
+    }
+
+    .texto3 {
+        grid-area: texto3;
+    }
+
+    .texto4 {
+        grid-area: texto4;
+    }
+
+    .listadoProductos {
+        display: grid;
+        grid-template-columns: 95%;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+            "img1"
+            "texto1"
+            "img2"
+            "texto2"
+            "img3"
+            "texto3"
+            "img4"
+            "texto4";
+    }
+
+    a:hover {
+        color: rgb(255, 112, 112);
+        font-size: 1.1rem;
+    }
+
+    /* Haciendo responsive index  */
+
+    .contenidoPrincipal {
+        width: 75vw;
+    }
+
+    .logoKon {
+        width: 250px;
+        height: 200px;
+    }
+
+    .mapaUbicacion {
+        width: 400px;
+        height: 300px;
+    }
+
+    .contacto {
+        font-size: 25px;
+    }
+
+    .listadoHistoria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "historia1"
+            "historia2"
+            "historia3"
+            "historia4"
+        ;
+    }
+
+    .contTexto {
+        width: 95%;
+        margin: 15px;
+
+    }
+
+    .videoHistoria {
+        margin: 25px;
+
+    }
+
+    .historia1 {
+        place-self: center;
+    }
+
+    .historia3 {
+        place-self: center;
+    }
+
+    /* hover imagenes fuera  */
+
+    .imgGaleria:hover {
+
+        animation-name: none;
+        animation-duration: 2s;
+        animation-delay: 500ms;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+
+    }
+
+    /* haciendo contacto responsive */
+
+    a.inicio {
+        color: antiquewhite;
+        font-size: 23px;
+    }
+
+    .inicio:hover {
+        color: antiquewhite;
+        font-size: 23px;
+    }
+
+    a.mapa:hover {
+        color: antiquewhite;
+        font-size: 15px;
+    }
+
+    .contactoMain {
+        width: fit-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(13, 1fr);
+        grid-template-areas:
+            "con1"
+            "con2"
+            "con3"
+            "con4"
+            "con5"
+            "con6"
+            "con7"
+            "con8"
+            "con9"
+            "con10"
+            "con10"
+            "con11"
+            "con12";
+        gap: 25px 20px;
+        margin: 0;
+    }
+
+    .con7 {
+        place-self: center;
+    }
+
+    .con2 {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:375px) {
+    .footer {
+        display: none;
+    }
+
+    .imagenProducto {
+        margin: 30px;
+    }
+
+    .nav1 {
+        display: none;
+    }
+
+    .contenidoPrincipal {
+        width: 100vw;
+    }
+
+    .mapaUbicacion {
+        width: 200px;
+        height: 200px;
+    }
+
+    .videoHistoria {
+        width: 200px;
+        height: 250px;
+        margin: 100px 25px 40px 25px;
+    }
+
+    .contTexto {
+        height: auto;
+    }
+
+    .listadoHistoria {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr 0.4fr 1fr;
+        grid-template-areas:
+            "historia1"
+            "historia2"
+            "historia3"
+            "historia4"
+        ;
+    }
+
+    p.video {
+        font-size: 20px;
+        width: 100%;
+        margin: 10px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .listadoProductos {
+        width: 95%;
+    }
+
+    a.inicio {
+        color: antiquewhite;
+        font-size: 21px;
+    }
+
+    .inicio:hover {
+        color: antiquewhite;
+        font-size: 21px;
+    }
+
+    a.mapa:hover {
+        color: antiquewhite;
+        font-size: 15px;
+    }
+
+    .contactoMain {
+        width: 95%;
+    }
+
+    .con2 {
+        width: auto;
+    }
+
+    .textoQuiero {
+        font-size: 21px;
+    }
+
+    .comentarios {
+        font-size: 30px;
+        text-align: center;
+    }
+}
