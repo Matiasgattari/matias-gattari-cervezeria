@@ -395,7 +395,7 @@ p.video {
 }
 
 .productos {
-    background-image: url(../../img/fondo-producto-png.png);
+    background-image: url(../img/fondo-producto-png.png);
     background-repeat: none;
     background-size: cover;
     background-attachment: fixed;
