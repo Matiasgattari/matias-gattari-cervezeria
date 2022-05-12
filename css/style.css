@@ -645,7 +645,7 @@ p.galeriaTexto {
 }
 
 .list1:hover {
-    background-color: aqua;
+    background-color: rgb(209, 136, 243);
 }
 
 a:hover {
@@ -663,11 +663,11 @@ a.inicio {
 }
 
 input:focus {
-    background-color: aquamarine;
+    background-color: rgb(145, 205, 245);
 }
 
 .focus:focus {
-    background-color: aquamarine;
+    background-color: rgb(145, 205, 245);
 }
 
 @keyframes zoom {
@@ -676,7 +676,7 @@ input:focus {
     }
 
     100% {
-        transform: scale(1.4);
+        transform: scale(1.45);
     }
 }
 
@@ -880,17 +880,17 @@ input:focus {
     /* haciendo contacto responsive */
 
     a.inicio {
-        color: antiquewhite;
+        color: rgb(248, 181, 94);
         font-size: 23px;
     }
 
     .inicio:hover {
-        color: antiquewhite;
+        color: rgb(248, 181, 94);
         font-size: 23px;
     }
 
     a.mapa:hover {
-        color: antiquewhite;
+        color: rgb(248, 181, 94);
         font-size: 15px;
     }
 
