@@ -880,7 +880,7 @@ input:focus {
     /* haciendo contacto responsive */
 
     a.inicio {
-        color: rgb(248, 181, 94);
+        color:antiquewhite;
         font-size: 23px;
     }
 
