@@ -29,9 +29,6 @@ body {
 a {
     text-decoration: none;
     text-decoration-color: none;
-    color: #FFE3FE;
-    text-transform: capitalize;
-    font-weight: bold;
     font-size: 1.5rem;
     font-family: 'Rubik Moonrocks', cursive;
     font-style: italic;
@@ -70,10 +67,10 @@ footer {
 /*ESTILOS CLASES */
 
 .list1 {
-    padding-left: 5px;
-    padding-right: 30px;
+    margin-left: 10px;
+
     font-weight: bold;
-    height: 1.5em;
+
     list-style-type: none;
 }
 
@@ -165,7 +162,7 @@ footer {
     border-right: 0;
     width: 100%;
     font-size: 1.3rem;
-    height: 2.2em;
+    height: 42px;
 
 }
 
@@ -204,7 +201,7 @@ footer {
 
 .contenidoPrincipal {
     height: auto;
-    width: 60vw;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.8fr 1fr 0.8fr 1fr;
@@ -245,6 +242,7 @@ footer {
 /* Agregando grid a historia  */
 
 .listadoHistoria {
+    width: 95%;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -276,9 +274,9 @@ footer {
 /* AGREGANDO FLEXBOX AL HISTORIA - MAIN */
 
 .videoHistoria {
-    width: 400px;
-    height: 450px;
-    margin: 100px 25px 40px 25px;
+    height: 80%;
+    margin: 17% 0% 2% 15%;
+
 }
 
 p.historiaTexto {
@@ -292,23 +290,14 @@ p.historiaTexto {
 
 .contTexto {
     height: 400px;
-    width: 750px;
-    margin-top: 120px;
-    margin-left: 50px;
+    width: 85%;
+    margin-top: 10%;
+    margin-left: 12%;
 
 }
 
 .overflow {
     overflow: auto;
-}
-
-.contenedorHistoria {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: row nowrap;
-    width: 1500px;
-
 }
 
 
@@ -335,7 +324,7 @@ p.video {
 
 .listadoProductos {
     height: auto;
-    width: 60vw;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -354,7 +343,7 @@ p.video {
 
 
 .imagenProducto {
-    width: 300px;
+    width: 45%;
     margin-top: 60px;
     margin-left: 100px;
     border-radius: 35px;
@@ -384,6 +373,8 @@ p.video {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
 }
 
 .historia {
@@ -392,6 +383,8 @@ p.video {
     background-size: cover;
     height: 100%;
     width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
 }
 
 .productos {
@@ -401,22 +394,28 @@ p.video {
     background-attachment: fixed;
     height: 100%;
     width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
 }
 
 .galeria {
-    background-image: url(../img/fondo-galeria-png.png);
-    background-repeat: none;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.contactoFondo {
     background-image: url(../img/fondo-contacto-png.png);
     background-repeat: none;
     background-size: cover;
     height: 100%;
     width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+}
+
+.contactoFondo {
+    background-image: url(../img/fondo.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(227, 139, 253);
+    padding: 0;
 }
 
 
@@ -434,7 +433,7 @@ p.video {
 p.galeriaTexto {
     font-size: 37px;
     font-family: 'Kaushan Script', cursive;
-    color: rgb(23, 35, 44);
+    color: rgb(207, 185, 248);
     font-weight: bold;
     padding-top: 45px;
     text-shadow: 4px -2px 5px;
@@ -618,6 +617,7 @@ p.galeriaTexto {
     font-size: 25px;
     font-family: 'Rubik Microbe', cursive;
     place-self: center;
+    text-shadow: 3px 4px 4px black;
 }
 
 .contacto1 {
@@ -635,6 +635,10 @@ p.galeriaTexto {
 
 }
 
+.loadingText {
+    color: aliceblue;
+}
+
 
 
 
@@ -649,8 +653,8 @@ p.galeriaTexto {
 }
 
 a:hover {
-    color: rgb(255, 112, 112);
-    font-size: 1.8rem;
+    color: rgb(255, 112, 112) !important;
+    ;
 }
 
 a.mapa:hover {
@@ -659,6 +663,7 @@ a.mapa:hover {
 
 a.inicio {
     font-size: 21px;
+    color: antiquewhite;
 
 }
 
@@ -690,9 +695,168 @@ input:focus {
 
 }
 
-/* FULL RESPONSIVE */
 
-@media screen and (max-width:768px) {
+
+/* bootstrap al nav  */
+
+/* body {
+    background-color: rgb(227, 139, 253);
+    padding: 0;
+} */
+
+.imagen1 {
+    width: 35px;
+    height: 40px;
+}
+
+.colorNav {
+    color: #FFE3FE !important;
+}
+
+
+
+.navegacion {
+    background-color: rgb(173, 139, 253)
+}
+
+.navegacionBarra {
+    background-color: rgb(136, 89, 243);
+    opacity: 90%;
+    height: 100%;
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    border-radius: 7px;
+}
+
+.separado {
+    justify-content: space-between;
+}
+
+.redondeoBordes {
+    border-radius: 15px;
+}
+
+/* a .dropdown-item {height: 25px;} */
+
+ul .dropdown-menu {
+    min-width: 100%;
+    background: rgba(156, 119, 243, 0);
+    border: none;
+}
+
+.tamañoCarrusel {
+    width: 700px;
+    /* margin-left: 23.5%; */
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.body {
+    max-width: 95%;
+}
+
+.bordesFormulario {
+    border-radius: 40px;
+    box-shadow: 10px 5px 5px rgb(136, 89, 243);
+    margin-top: 18px;
+}
+
+
+.botonEnviar {
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(136, 89, 243);
+    margin-bottom: 100px;
+}
+
+.bordeContacto {
+    border-top: 3px;
+    border-bottom: 3px;
+}
+
+
+
+h1 {
+    font-weight: 600;
+}
+
+
+
+/* full responsive  */
+
+.divCarrusel {
+    font-size: 21px;
+}
+
+.divCarruselH {
+    font-size: 28px;
+}
+
+@media screen and (max-width:850px) {
+
+    .tamañoCarrusel {
+        width: 500px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .divCarrusel {
+        font-size: 16px;
+    }
+
+    .divCarruselH {
+        font-size: 20px;
+    }
+
+    p.video {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .d-none {
+        display: inline-block !important;
+    }
+
+    /* .divH1 {
+        height: 42px;
+        } */
+
+    .historia1 {
+        height: 80%;
+    }
+
+    .listadoHistoria {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "historia1"
+            "historia2"
+            "historia3"
+            "historia4"
+        ;
+    }
+
+    .contTexto {
+        width: 95%;
+        margin: 15px;
+
+    }
+
+    .videoHistoria {
+        margin: 25px;
+
+    }
+
+    .historia1 {
+        place-self: center;
+    }
+
+    .historia3 {
+        place-self: center;
+    }
 
     /* haciendo galeria responsive  */
 
@@ -728,7 +892,6 @@ input:focus {
         font-size: 1.5rem;
     }
 
-
     /* Agregando grids para productos responsive */
     p.video {
         font-size: 20px;
@@ -737,7 +900,7 @@ input:focus {
     }
 
     .divH1 {
-        height: 1em;
+        height: 42px;
         font-size: 2rem;
         text-align: center;
     }
@@ -814,207 +977,105 @@ input:focus {
         font-size: 1.1rem;
     }
 
-    /* Haciendo responsive index  */
-
-    .contenidoPrincipal {
-        width: 75vw;
-    }
-
-    .logoKon {
-        width: 250px;
-        height: 200px;
-    }
-
-    .mapaUbicacion {
-        width: 400px;
-        height: 300px;
-    }
-
-    .contacto {
-        font-size: 25px;
-    }
-
-    .listadoHistoria {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            "historia1"
-            "historia2"
-            "historia3"
-            "historia4"
-        ;
-    }
-
-    .contTexto {
-        width: 95%;
-        margin: 15px;
-
-    }
-
-    .videoHistoria {
-        margin: 25px;
-
-    }
-
-    .historia1 {
-        place-self: center;
-    }
-
-    .historia3 {
-        place-self: center;
-    }
-
-    /* hover imagenes fuera  */
-
-    .imgGaleria:hover {
-
-        animation-name: none;
-        animation-duration: 2s;
-        animation-delay: 500ms;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-
-    }
-
-    /* haciendo contacto responsive */
-
-    a.inicio {
-        color:antiquewhite;
-        font-size: 23px;
-    }
-
-    .inicio:hover {
-        color: rgb(248, 181, 94);
-        font-size: 23px;
-    }
-
-    a.mapa:hover {
-        color: rgb(248, 181, 94);
-        font-size: 15px;
-    }
-
-    .contactoMain {
-        width: fit-content;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(13, 1fr);
-        grid-template-areas:
-            "con1"
-            "con2"
-            "con3"
-            "con4"
-            "con5"
-            "con6"
-            "con7"
-            "con8"
-            "con9"
-            "con10"
-            "con10"
-            "con11"
-            "con12";
-        gap: 25px 20px;
-        margin: 0;
-    }
-
-    .con7 {
-        place-self: center;
-    }
-
-    .con2 {
-        width: 100%;
-    }
-
 }
 
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:590px) {
     .footer {
         display: none;
     }
 
-    .imagenProducto {
-        margin: 30px;
+    .tamañoCarrusel {
+        font-size: 16px;
+        width: 300px;
+        /* margin-left: 23.5%; */
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
-    .nav1 {
+    .historia1 {
+        height: 60%;
+    }
+
+    .divCarrusel {
+        display: none;
+    }
+
+    .contenidoPrincipalElemento {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .contenidoPrincipalElemento {
+        font-size: 16px;
+    }
+
+    .logoKon {
         display: none;
     }
 
     .contenidoPrincipal {
-        width: 100vw;
-    }
-
-    .mapaUbicacion {
-        width: 200px;
-        height: 200px;
-    }
-
-    .videoHistoria {
-        width: 200px;
-        height: 250px;
-        margin: 100px 25px 40px 25px;
-    }
-
-    .contTexto {
-        height: auto;
-    }
-
-    .listadoHistoria {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1fr 0.4fr 1fr;
-        grid-template-areas:
-            "historia1"
-            "historia2"
-            "historia3"
-            "historia4"
-        ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "index1"
+            "index2"
+            "index3";
     }
 
-    p.video {
-        font-size: 20px;
-        width: 100%;
-        margin: 10px;
+}
+
+@media screen and (max-width:400px) {
+    .tamañoCarrusel {
+        width: 200px;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
-    a {
+    .divCarruselH {
         font-size: 16px;
     }
 
-    .listadoProductos {
-        width: 95%;
+    .historia1 {
+        width: 150px;
+        height: 300px;
     }
 
-    a.inicio {
-        color: antiquewhite;
-        font-size: 21px;
+    .historia1 {
+        display: none;
     }
 
-    .inicio:hover {
-        color: antiquewhite;
-        font-size: 21px;
+    p.historiaTexto {
+        font-size: 16px;
     }
 
-    a.mapa:hover {
-        color: antiquewhite;
-        font-size: 15px;
+    .contTexto {
+        width: 85%;
+        margin: 10px;
+
     }
 
-    .contactoMain {
-        width: 95%;
+    .historia3 {
+        display: none;
     }
 
-    .con2 {
-        width: auto;
+    .listadoHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "historia2""historia4";
+
     }
 
-    .textoQuiero {
-        font-size: 21px;
+    p.galeriaTexto {
+        font-size: 16px;
     }
 
     .comentarios {
         font-size: 30px;
-        text-align: center;
+    }
+
+    .comentarios {
+        font-size: 25px;
     }
 }
